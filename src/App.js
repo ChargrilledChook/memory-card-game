@@ -1,28 +1,47 @@
 import "./App.css";
+import React, { useState } from "react";
+import Card from "./components/Card";
+import NewCards from "./components/Card";
+import { cardData } from "./components/initialData";
 
 function App() {
+  const [score, setScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
+  const win = () => {
+    console.log(score);
+    setScore(score + 1);
+  };
+  const [cards, setCards] = useState(cardData());
+  const lose = () => {
+    if (score > highScore) setHighScore(score);
+    setScore(0);
+    setCards(cardData());
+  };
   return (
     <div className="wrapper">
       <header>
-        <h1>Memory Card Game</h1>
+        <div>
+          <h1>Memory Card Game</h1>
+          <div>Don't click the same card twice!</div>
+        </div>
         <div className="score">
-          <div>Current Score:</div>
-          <div>High Score:</div>
+          <div>Current Score: {score}</div>
+          <div>High Score: {highScore}</div>
         </div>
       </header>
       <main>
-        <div className="card">1</div>
-        <div className="card">2</div>
-        <div className="card">3</div>
-        <div className="card">4</div>
-        <div className="card">5</div>
-        <div className="card">6</div>
-        <div className="card">7</div>
-        <div className="card">8</div>
-        <div className="card">9</div>
-        <div className="card">10</div>
-        <div className="card">11</div>
-        <div className="card">12</div>
+        {cards.map((card) => {
+          return (
+            <Card
+              key={card.id}
+              id={card.id}
+              selected={card.selected}
+              win={win}
+              lose={lose}
+              setCounter={setScore}
+            />
+          );
+        })}
       </main>
       <footer>By Chook</footer>
     </div>
