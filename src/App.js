@@ -1,8 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
-import Card from "./components/Card";
-import NewCards from "./components/Card";
 import { cardData } from "./components/initialData";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -19,31 +20,9 @@ function App() {
   };
   return (
     <div className="wrapper">
-      <header>
-        <div>
-          <h1>Memory Card Game</h1>
-          <div>Don't click the same card twice!</div>
-        </div>
-        <div className="score">
-          <div>Current Score: {score}</div>
-          <div>High Score: {highScore}</div>
-        </div>
-      </header>
-      <main>
-        {cards.map((card) => {
-          return (
-            <Card
-              key={card.id}
-              id={card.id}
-              selected={card.selected}
-              win={win}
-              lose={lose}
-              setCounter={setScore}
-            />
-          );
-        })}
-      </main>
-      <footer>By Chook</footer>
+      <Header score={score} highScore={highScore} />
+      <Main cards={cards} win={win} lose={lose} />
+      <Footer />
     </div>
   );
 }
