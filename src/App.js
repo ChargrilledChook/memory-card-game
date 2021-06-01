@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { cardData } from "./components/initialData";
+
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
@@ -11,17 +11,17 @@ function App() {
   const win = () => {
     console.log(score);
     setScore(score + 1);
+    // High score should update on a win too
   };
-  const [cards, setCards] = useState(cardData());
+
   const lose = () => {
     if (score > highScore) setHighScore(score);
     setScore(0);
-    setCards(cardData());
   };
   return (
     <div className="wrapper">
       <Header score={score} highScore={highScore} />
-      <Main cards={cards} win={win} lose={lose} />
+      <Main win={win} lose={lose} />
       <Footer />
     </div>
   );
