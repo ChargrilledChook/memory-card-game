@@ -11,16 +11,6 @@ import dog10 from "../assets/10.jpg";
 import dog11 from "../assets/11.jpg";
 import dog12 from "../assets/12.jpg";
 
-function cardData() {
-  return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((val) => ({
-    id: val,
-    selected: false,
-    img: `./assets/${val}.jpg`,
-  }));
-}
-
-// export const initialCards = cardData();
-
 export const initialCards = [
   {
     id: 1,

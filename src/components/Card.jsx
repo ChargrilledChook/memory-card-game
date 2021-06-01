@@ -1,5 +1,3 @@
-// import React, { useState } from "react";
-
 export default function Card(props) {
   const round = () => {
     props.select(props.id, props.img);
@@ -7,7 +5,7 @@ export default function Card(props) {
   };
   return (
     <div onClick={round} className="card">
-      <img src={props.img}></img>
+      <img alt="" src={props.img}></img>
     </div>
   );
 }
