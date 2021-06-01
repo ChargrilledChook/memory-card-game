@@ -18,11 +18,11 @@ export default function Main(props) {
     console.log(cards);
   };
 
-  const select = (key) => {
+  const select = (key, img) => {
     setCards(
       shuffle(
         cards.map((card) =>
-          card.id === key ? { id: key, selected: true } : card
+          card.id === key ? { id: key, selected: true, img: img } : card
         )
       )
     );
@@ -36,6 +36,7 @@ export default function Main(props) {
             key={card.id}
             id={card.id}
             selected={card.selected}
+            img={card.img}
             select={select}
             win={win}
             lose={lose}
