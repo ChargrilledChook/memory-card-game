@@ -11,65 +11,22 @@ import dog10 from "../assets/10.jpg";
 import dog11 from "../assets/11.jpg";
 import dog12 from "../assets/12.jpg";
 
-export const initialCards = [
-  {
-    id: 1,
-    selected: false,
-    img: dog1,
-  },
-  {
-    id: 2,
-    selected: false,
-    img: dog2,
-  },
-  {
-    id: 3,
-    selected: false,
-    img: dog3,
-  },
-  {
-    id: 4,
-    selected: false,
-    img: dog4,
-  },
-  {
-    id: 5,
-    selected: false,
-    img: dog5,
-  },
-  {
-    id: 6,
-    selected: false,
-    img: dog6,
-  },
-  {
-    id: 7,
-    selected: false,
-    img: dog7,
-  },
-  {
-    id: 8,
-    selected: false,
-    img: dog8,
-  },
-  {
-    id: 9,
-    selected: false,
-    img: dog9,
-  },
-  {
-    id: 10,
-    selected: false,
-    img: dog10,
-  },
-  {
-    id: 11,
-    selected: false,
-    img: dog11,
-  },
-  {
-    id: 12,
-    selected: false,
-    img: dog12,
-  },
-];
+const images = [dog1, dog2, dog3, dog4, dog5, dog6,dog7, dog8, dog9, dog10, dog11, dog12];
+
+function createCard(key, image){
+  return {id: key, selected: false, img: image}
+}
+
+function createCardArray(images) {
+  const result = [];
+
+  for(let i = 0; i <images.length; i++){
+    const key = i+1;
+    result.push(createCard(key, images[i]))
+  }
+  return result
+}
+
+export const initialCards = createCardArray(images)
+
+
