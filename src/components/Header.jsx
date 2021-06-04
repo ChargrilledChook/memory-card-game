@@ -5,6 +5,13 @@ export default function Header(props) {
         <h1>Memory Card Game - Alpha</h1>
         <div>Don't click the same card twice!</div>
       </div>
+      <div className="theme">
+        <label htmlFor="theme">Choose theme:</label>
+        <select name="theme" id="theme">
+          <option value="cards">Cards</option>
+          <option value="dogs">My Dogs</option>
+        </select>
+      </div>
       <div className="score">
         <div>Current Score: {props.score}</div>
         <div>High Score: {props.highScore}</div>
