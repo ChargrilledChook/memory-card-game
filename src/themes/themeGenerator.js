@@ -1,5 +1,5 @@
 import { dogCards } from './dogTheme'
-import { clubCards } from './cardTheme'
+import { cardTheme } from './cardTheme'
 
 function createCard(key, image){
   return {id: key, selected: false, img: image}
@@ -15,6 +15,6 @@ function createCardArray(images) {
   return result
 }
 
-export const initialCards = createCardArray(clubCards)
+export const initialCards = createCardArray(cardTheme)
 
 
