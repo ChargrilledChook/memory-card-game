@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import { initialCards } from "./initialData";
+import { initialCards } from "../themes/themeGenerator";
 import { shuffle } from "lodash";
 
 export default function Main(props) {
