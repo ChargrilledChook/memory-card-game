@@ -30,19 +30,21 @@ export default function Main(props) {
 
   return (
     <main>
-      {cards.map((card) => {
-        return (
-          <Card
-            key={card.id}
-            id={card.id}
-            selected={card.selected}
-            img={card.img}
-            select={select}
-            win={win}
-            lose={lose}
-          />
-        );
-      })}
+      {cards
+        .map((card) => {
+          return (
+            <Card
+              key={card.id}
+              id={card.id}
+              selected={card.selected}
+              img={card.img}
+              select={select}
+              win={win}
+              lose={lose}
+            />
+          );
+        })
+        .slice(0, 26)}
     </main>
   );
 }
