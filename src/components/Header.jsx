@@ -14,7 +14,7 @@ export default function Header(props) {
       </div>
       <div className="score">
         <div>Current Score: {props.score}</div>
-        <div>High Score: {props.highScore}</div>
+        <div>Highest Score: {props.highScore}</div>
       </div>
     </header>
   );
