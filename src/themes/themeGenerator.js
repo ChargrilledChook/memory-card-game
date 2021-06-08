@@ -1,4 +1,4 @@
-import { dogCards } from './dogTheme'
+// import { dogCards } from './dogTheme'
 import { cardTheme } from './cardTheme'
 
 function createCard(key, image){
