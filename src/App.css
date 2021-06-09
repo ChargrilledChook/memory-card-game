@@ -1,17 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+
 .wrapper {
+  color: white;
+  font-family: sanchez, serif;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 header {
-  background-color: rgb(245, 221, 88);
+  background-color: rgb(65, 56, 56);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
 
 header h1 {
+  text-decoration: underline overline red;
   margin: 0;
   padding: 2rem 0;
 }
@@ -35,8 +40,14 @@ main .card {
 }
 
 footer {
-  background-color: rgb(245, 221, 88);
+  background-color: rgb(65, 56, 56);
   padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .card img {

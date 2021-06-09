@@ -18,6 +18,8 @@ export default function Main(props) {
     console.log(cards);
   };
 
+  const round = () => {};
+
   const select = (key, img) => {
     setCards(
       shuffle(

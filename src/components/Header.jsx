@@ -2,7 +2,7 @@ export default function Header(props) {
   return (
     <header>
       <div>
-        <h1>Memory Card Game - Alpha</h1>
+        <h1>Memory Cards</h1>
         <div>Don't click the same card twice!</div>
       </div>
       <div className="theme">

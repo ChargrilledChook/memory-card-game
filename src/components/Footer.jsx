@@ -1,3 +1,9 @@
 export default function Footer() {
-  return <footer>By Chooky</footer>;
+  return (
+    <footer className="site-footer">
+      ♣️ ♥️ By Dylan 2021. View my code on{" "}
+      <a href="https://github.com/ChargrilledChook/memory-card-game">GitHub</a>{" "}
+      ♠️ ♦️
+    </footer>
+  );
 }
