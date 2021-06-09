@@ -14,11 +14,7 @@ export default function Main(props) {
 
   const win = () => {
     props.win();
-    // setCards(shuffle(cards));
-    console.log(cards);
   };
-
-  const round = () => {};
 
   const select = (key, img) => {
     setCards(
