@@ -4,7 +4,7 @@ import { initialCards } from "../themes/themeGenerator";
 import { shuffle } from "lodash";
 
 export default function Main(props) {
-  const [cards, setCards] = useState(initialCards);
+  const [cards, setCards] = useState(shuffle(initialCards));
 
   const lose = () => {
     props.lose();
