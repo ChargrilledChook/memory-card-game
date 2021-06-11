@@ -3,7 +3,7 @@ export default function Header(props) {
     <header>
       <div>
         <h1>Memory Cards</h1>
-        <div>Don't click the same card twice!</div>
+        <div>Pick a card, any card - but don't click the same card twice!</div>
       </div>
       {/* <div className="theme">
         <label htmlFor="theme">Choose theme:</label>
