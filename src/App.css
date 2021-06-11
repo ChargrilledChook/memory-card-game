@@ -26,11 +26,12 @@ header .score {
 }
 
 main {
+  /* min-width: 100vw; */
   background-color: rgb(65, 56, 56);
   display: grid;
   gap: 2rem;
   /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-  grid-template-columns: repeat(7, 150px);
+  grid-template-columns: repeat(7, auto);
   place-content: center;
 }
 
@@ -48,10 +49,32 @@ footer {
 
 footer a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: underline red;
+}
+
+footer a:hover {
+  color: red;
+  text-decoration: underline red;
 }
 
 .card img {
   width: 100px;
-  aspect-ratio: initial;
+}
+
+@media all and (max-width: 840px) {
+  .card img {
+    width: 80px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .card img {
+    width: 60px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .card img {
+    width: 50px;
+  }
 }
