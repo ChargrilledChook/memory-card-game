@@ -86,6 +86,13 @@ footer a:hover {
     display: block;
   }
 
+  header .score {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0;
+  }
+
   main {
     gap: 1rem;
   }
