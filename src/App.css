@@ -74,6 +74,13 @@ footer a:hover {
 }
 
 @media all and (max-width: 540px) {
+  body {
+    font-size: 150%;
+  }
+  header {
+    text-align: center;
+    display: block;
+  }
   .card img {
     width: 50px;
   }
