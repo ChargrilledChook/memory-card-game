@@ -100,4 +100,7 @@ footer a:hover {
   .card img {
     width: 50px;
   }
+  footer {
+    padding: 2rem 1rem;
+  }
 }
