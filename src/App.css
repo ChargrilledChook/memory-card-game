@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
 
+body {
+  background-color: rgb(65, 56, 56);
+}
+
 .wrapper {
   color: white;
   font-family: sanchez, serif;
@@ -80,6 +84,10 @@ footer a:hover {
   header {
     text-align: center;
     display: block;
+  }
+
+  main {
+    gap: 1rem;
   }
   .card img {
     width: 50px;
