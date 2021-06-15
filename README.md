@@ -1,3 +1,9 @@
+## Attributions
+
+Card images taken from the [American Contract Bridge League](http://acbl.mybigcommerce.com/52-playing-cards/)
+
+# Boiler plate below
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
