@@ -1,11 +1,7 @@
-export default function Card(props) {
-  const round = () => {
-    props.select(props.id, props.img);
-    props.selected ? props.lose() : props.win();
-  };
+export default function Card({ round, selected, id, img }) {
   return (
-    <div onClick={round} className="card">
-      <img alt="a playing card" src={props.img}></img>
+    <div onClick={() => round(selected, id, img)} className="card">
+      <img alt="a playing card" src={img}></img>
     </div>
   );
 }

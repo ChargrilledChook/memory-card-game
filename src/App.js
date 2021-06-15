@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -9,21 +9,19 @@ function App() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
 
-  useEffect(()=> {if(score > highScore) setHighScore(score)}, [score, highScore])
-
-  const win = () => {
-    console.log(score);
-    setScore(score + 1);
-  };
-
-  const lose = () => {
-    if (score > highScore) setHighScore(score);
-    setScore(0);
+  const round = (lose) => {
+    if (lose) {
+      setScore(0);
+    } else {
+      const newScore = score + 1;
+      setScore(newScore);
+      if (newScore > highScore) setHighScore(newScore);
+    }
   };
   return (
     <div className="wrapper">
       <Header score={score} highScore={highScore} />
-      <Main win={win} lose={lose} />
+      <Main round={round} />
       <Footer />
     </div>
   );
