@@ -5,7 +5,7 @@ export default function Card(props) {
   };
   return (
     <div onClick={round} className="card">
-      <img alt="" src={props.img}></img>
+      <img alt="a playing card" src={props.img}></img>
     </div>
   );
 }
