@@ -1,3 +1,13 @@
+# Memory Card Game
+
+## About
+
+## How to Use
+
+## Learning Goals
+
+## Reflections
+
 ## Issues
 
 - When card array is randomised, there is no check that there is a valid move the player can make. This means there is a chance for players to get impossible rounds when they hit a certain score (~25).
@@ -18,6 +28,8 @@
 
 ## Possible Future Features
 
+- Make the gameplay "endless" - after reaching 52(or a multiple of), the selected flag of all cards is reset but the score persists
+- Add more visual feedback when a player loses
 - Ability to change difficulty of game
 - Ability to pick different themes (ie different sets of images)
 - Use external apis to fetch images instead of using static images, depending on theme
