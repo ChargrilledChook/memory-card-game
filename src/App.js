@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header score={score} highScore={highScore} />
-      <Main round={round} />
+      <Main round={round} gridSize={28} />
       <Footer />
     </div>
   );

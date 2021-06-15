@@ -40,7 +40,7 @@ export default function Main(props) {
             />
           );
         })
-        .slice(0, 28)}
+        .slice(0, props.gridSize)}
     </main>
   );
 }
