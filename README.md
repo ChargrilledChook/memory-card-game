@@ -1,3 +1,27 @@
+## Issues
+
+- When card array is randomised, there is no check that there is a valid move the player can make. This means there is a chance for players to get impossible rounds when they hit a certain score (~25).
+
+  - Easiest quick fix to this would be to instanstly reshuffle the array if it doesn't contain a non selected card, but this is not a particularly good algorithm.
+
+- Card emojis in footer look different in different browsers. Some of the coloured versions are difficult to see against the background colour.
+
+  - Test different browers with slightly different background colour palettes
+
+- Card images are lazy loaded (by default). Since not all cards are shown at once, players (especially on first playthough) will have to wait for images to load.
+
+  - Find a way to eager load images
+  - and / or
+  - use a loading spinner till all images are loaded
+  - and / or
+  - Show a default image (ie a card back) until all images are loaded
+
+## Possible Future Features
+
+- Ability to change difficulty of game
+- Ability to pick different themes (ie different sets of images)
+- Use external apis to fetch images instead of using static images, depending on theme
+
 ## Attributions
 
 Card images taken from the [American Contract Bridge League](http://acbl.mybigcommerce.com/52-playing-cards/)
