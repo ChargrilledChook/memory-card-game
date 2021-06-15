@@ -9,6 +9,8 @@ function App() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
 
+  const gridSize = 28;
+
   const round = (lose) => {
     if (lose) {
       setScore(0);
@@ -21,7 +23,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header score={score} highScore={highScore} />
-      <Main round={round} gridSize={28} />
+      <Main round={round} gridSize={gridSize} />
       <Footer />
     </div>
   );
