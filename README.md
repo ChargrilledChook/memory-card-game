@@ -1,8 +1,17 @@
 # Memory Card Game
 
+This readme currently being updated.
+
+WIP
+
 ## About
 
 ## How to Use
+
+## Tools Used
+
+- React / createReactApp
+- Lodash (for the shuffle function)
 
 ## Learning Goals
 
