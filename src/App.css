@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
 
-body {
-  background-color: rgb(65, 56, 56);
+:root {
+  --main-colour: rgb(65, 56, 56);
+  --highlight-colour: red;
+  --text-colour: white;
 }
 
 .wrapper {
-  color: white;
+  background-color: var(--main-colour);
+  color: var(--text-colour);
   font-family: sanchez, serif;
   min-height: 100vh;
   display: grid;
@@ -13,14 +16,13 @@ body {
 }
 
 header {
-  background-color: rgb(65, 56, 56);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
 
 header h1 {
-  text-decoration: underline overline red;
+  text-decoration: underline overline var(--highlight-colour);
   margin: 0;
   padding: 2rem 0;
 }
@@ -30,7 +32,6 @@ header .score {
 }
 
 main {
-  background-color: rgb(65, 56, 56);
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(7, auto);
@@ -44,23 +45,21 @@ main .card {
 }
 
 footer {
-  background-color: rgb(65, 56, 56);
   padding: 2rem;
   text-align: center;
 }
 
 footer a {
   color: inherit;
-  text-decoration: underline red;
+  text-decoration: underline var(--highlight-colour);
 }
 
 footer a:hover {
-  color: red;
-  text-decoration: underline red;
+  color: var(--highlight-colour);
 }
 
 .card img {
-  width: 100px;
+  width: 10rem;
 }
 
 @media all and (max-width: 840px) {
@@ -83,7 +82,7 @@ footer a:hover {
 
 @media all and (max-width: 700px) {
   .card img {
-    width: 60px;
+    width: 6rem;
   }
 }
 
@@ -96,7 +95,7 @@ footer a:hover {
     gap: 1rem;
   }
   .card img {
-    width: 50px;
+    width: 5rem;
   }
   footer {
     padding: 2rem 1rem;
