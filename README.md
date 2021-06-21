@@ -12,7 +12,7 @@ A live demo of the site is available [here](https://chargrilledchook.github.io/m
 
 To run this app on your local machine, clone this repository, navigate to the top level of the directory enter `npm start` in your terminal.
 
-For more information see the [available scripts](##available-Scripts).
+For more information see the [available scripts](#available-scripts).
 
 ## Reflections
 
