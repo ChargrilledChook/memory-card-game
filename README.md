@@ -1,10 +1,17 @@
-# Memory Card Game
+# ♥️ Memory Card Game ♠️
 
-This readme currently being updated.
+A fun little memory game to train your brain. Can you get a score of 52?
 
-WIP
+####[Play](https://chargrilledchook.github.io/memory-card-game/)
 
 ## About
+
+A React practice project with a focus on learning hooks. Done as part of [The Odin Project's](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card) curriculum.
+
+### How to Play
+
+There are 52 cards in total, but only 25 are displayed on screen at a time.
+Don't pick the same card twice, or your score will be reset and you're back to square one.
 
 ## How to Use
 
@@ -15,6 +22,28 @@ To run this app on your local machine, clone this repository, navigate to the to
 For more information see the [available scripts](#available-scripts).
 
 ## Reflections
+
+Overall an enjoyable project with a nice result. There were several features I wanted to add that missed the cut for this version, but overall a very solid MVP.
+
+#### Hooks
+
+Hooks were less of a conceptual shift than I was anticipating, and felt more like learning an alternate syntax than a different style altogether. On balance code written in hooks feels cleaner and I'll likely continue with them for my next project.
+
+The only thing I couldn't directly emulate from class components was the setstate callback, which ultimately had a better solution than handling within state.
+
+### Managing State
+
+Thinking about where state should go seems to be one of the more tricky things with React in general, and I needed to refactor several times to get my state and functions right. I've tried to stick to the React doc's [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html) recommendations and rules of thumb.
+
+A couple of times I found myself adding on wrappers to functions as I passed them down to props - unsure if this is a good pattern or not. Probably fine in a small project like this, but it's likely better to aim to keep the functions 'cleaner' so they're easier to reason about as they flow down - have tried to do a bit of research on this topic but haven't found anything definitive yet.
+
+In the course of my research I learnt about "prop drilling" and the use of reducers to combat the downsides in extreme cases - something to experiment with next time.
+
+#### CSS
+
+The amount of CSS for this project is reasonably low, so I elected to go with a single main CSS file with styling and a second with set up / boilerplate and a normalise import. While I've recently learned component scoped CSS is probably ideal, the simplicity and ease of a single file outweighed it in this case.
+
+Ideally I'd like to experiment more with CSS modules or perhaps styled components in the next project where that makes sense.
 
 ## Tools Used
 
