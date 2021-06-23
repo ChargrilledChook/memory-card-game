@@ -68,7 +68,7 @@ Ideally I'd like to experiment more with CSS modules or perhaps styled component
   - and / or
   - Show a default image (ie a card back) until all images are loaded
 
-## Possible Future Features
+### Possible Future Features
 
 - Make the gameplay "endless" - after reaching 52(or a multiple of), the selected flag of all cards is reset but the score persists
 - Add more visual feedback when a player loses
@@ -76,17 +76,17 @@ Ideally I'd like to experiment more with CSS modules or perhaps styled component
 - Ability to pick different themes (ie different sets of images)
 - Use external apis to fetch images instead of using static images, depending on theme
 
-## Attributions
+### Attributions
 
 Card images taken from the [American Contract Bridge League](http://acbl.mybigcommerce.com/52-playing-cards/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -94,7 +94,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -104,7 +104,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
