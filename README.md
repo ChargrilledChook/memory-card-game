@@ -2,7 +2,7 @@
 
 A fun little memory game to train your brain. Can you get a score of 52?
 
-####[Play](https://chargrilledchook.github.io/memory-card-game/)
+#### [Play](https://chargrilledchook.github.io/memory-card-game/)
 
 ### About
 
